@@ -1,41 +1,32 @@
-# მეორე ვერსიისთვის
 import random
 
-# -> None ანუ არაფერს არ აბრუნებს
-# უფრო წაკითხვადია
-def საწყისი_ვერსია() -> None:
-    # სახელის ცვლადი
+def first_version() -> None:
+    
     name = input("What is your name? ")
 
-    # გამარჯობას + სახელი = გამარჯობა ნიკა
-    output = "Hello, " + name + ", nice to meet you!"
 
-    # დავბეჭდოთ ჩვენი მისალმება
+    output = "Hello, " + name + ", nice to meet you"
+
+  
     print(output)
 
-def ცვლადების_გარეშე() -> None:
-    # ერთ ხაზზე, ცვლადების გარეშე.
+def without_variable() -> None:
+  
     print("Hello,", input("What is your name? "), "nice to meet you!")
 
-def მეორე_ვერსია() -> None:
+def second_version() -> None:
     name = input("What is your name? ")
 
-    # სავარაუდო მისალმებები
-    # დაფორმატებული სტრინგები (f"")
     greetings = [
         f"Hello, {name}. Nice to meet you",
         f"Greetings, {name}.",
         f"Nice to see you {name}.",
         f"Hi {name}",
-        f"Hello {name}. This code was written by Nick Kipshidze"
+        f"Hello {name}."
     ]
 
-    # შემთხვევით ამოვარჩიოთ წევრი
     print(
         greetings[
             random.randint(0, len(greetings)-1)
         ]
     )
-
-# შემდეგ ხაზზე გამოიძახე ფუნქცია!
-# მაგალითი()
